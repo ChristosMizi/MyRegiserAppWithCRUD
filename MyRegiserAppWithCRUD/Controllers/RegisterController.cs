@@ -28,5 +28,10 @@ namespace MyRegiserAppWithCRUD.Controllers
             db.SaveChanges();
             return View();
         }
+
+        public ActionResult ShowDataToTheUSer()
+        {
+            return View();
+        }
     }
 }
