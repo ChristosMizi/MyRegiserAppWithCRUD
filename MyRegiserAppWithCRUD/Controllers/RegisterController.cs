@@ -15,5 +15,18 @@ namespace MyRegiserAppWithCRUD.Controllers
         {
             return View();
         }
+
+        
+        [HttpPost]
+        public ActionResult SetDataInDatabase(LoginPanel model)
+        {
+            LoginPanel tbl = new LoginPanel();
+            tbl.Username = model.Username;
+            tbl.Password = model.Password;
+
+            db.LoginPanels.Add(tbl);
+            db.SaveChanges();
+            return View();
+        }
     }
 }
