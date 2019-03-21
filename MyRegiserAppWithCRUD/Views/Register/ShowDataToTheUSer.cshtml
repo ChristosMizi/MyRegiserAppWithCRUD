@@ -17,7 +17,7 @@
                  <td>@Model[i].Password</td>
                  <td>
                      <a href="@Url.Action("Delete",new {id =Model[i].ID })"><i class="glyphicon glyphicon-trash"></i></a>
-                     <a href="#"><i class="glyphicon glyphicon-edit"></i></a>
+                     <a href="@Url.Action("Edit",new {id =Model[i].ID })"><i class="glyphicon glyphicon-edit"></i></a>
                  </td>
              </tr>            
              }

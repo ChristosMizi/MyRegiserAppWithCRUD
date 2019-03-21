@@ -45,5 +45,20 @@ namespace MyRegiserAppWithCRUD.Controllers
             var item2 = db.LoginPanels.ToList();
             return View("ShowDataToTheUSer",item2);
         }
+
+        public ActionResult Edit(int id)
+        {
+            var item = db.LoginPanels.Where(x => x.ID == id).First();
+            return View(item);
+        }
+        [HttpPost]
+        public ActionResult Edit(LoginPanel model)
+        {
+            var item = db.LoginPanels.Where(x => x.ID ==model.ID).First();
+            item.Username = model.Username;
+            item.Password = model.Password;
+            db.SaveChanges();
+            return View();
+        }
     }
 }
