@@ -31,7 +31,19 @@ namespace MyRegiserAppWithCRUD.Controllers
 
         public ActionResult ShowDataToTheUSer()
         {
-            return View();
+            var TableFromDatabaseLoginPanel = db.LoginPanels.ToList();
+            return View(TableFromDatabaseLoginPanel);
+        }
+
+
+        public ActionResult Delete(int id)
+        {
+            var item = db.LoginPanels.Where(x => x.ID == id).First();
+            db.LoginPanels.Remove(item);
+            db.SaveChanges();
+
+            var item2 = db.LoginPanels.ToList();
+            return View("ShowDataToTheUSer",item2);
         }
     }
 }
