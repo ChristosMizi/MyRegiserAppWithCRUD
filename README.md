@@ -16,3 +16,11 @@ List of USers
 
 ![](https://raw.githubusercontent.com/ChristosMizi/MyRegiserAppWithCRUD/master/MyRegiserAppWithCRUD/Content/Images/ListOfUsers.PNG)
 
+Validate Username: Available
+
+![](https://raw.githubusercontent.com/ChristosMizi/MyRegiserAppWithCRUD/master/MyRegiserAppWithCRUD/Content/Images/ValidationGreen.PNG)
+
+Validate Username: Taken
+
+![](https://raw.githubusercontent.com/ChristosMizi/MyRegiserAppWithCRUD/master/MyRegiserAppWithCRUD/Content/Images/ValidationRed.PNG)
+
