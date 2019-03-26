@@ -29,7 +29,7 @@
           <Property Name="Username" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="MyRegisterAppWithCRUDEntitiesConn" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="MyRegisterAppWithCRUDEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="LoginPanels" EntityType="Self.LoginPanel" />
         </EntityContainer>
       </Schema>
@@ -37,7 +37,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="MyRegisterAppWithCRUDModelStoreContainer" CdmEntityContainer="MyRegisterAppWithCRUDEntitiesConn">
+        <EntityContainerMapping StorageEntityContainer="MyRegisterAppWithCRUDModelStoreContainer" CdmEntityContainer="MyRegisterAppWithCRUDEntities1">
           <EntitySetMapping Name="LoginPanels">
             <EntityTypeMapping TypeName="MyRegisterAppWithCRUDModel.LoginPanel">
               <MappingFragment StoreEntitySet="LoginPanel">

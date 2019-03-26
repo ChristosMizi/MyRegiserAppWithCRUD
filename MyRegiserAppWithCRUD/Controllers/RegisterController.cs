@@ -9,7 +9,7 @@ namespace MyRegiserAppWithCRUD.Controllers
 {
     public class RegisterController : Controller
     {
-        MyRegisterAppWithCRUDEntitiesConn db = new MyRegisterAppWithCRUDEntitiesConn();
+        MyRegisterAppWithCRUDEntities1 db = new MyRegisterAppWithCRUDEntities1();
         // GET: Register
         public ActionResult SetDataInDatabase()
         {
@@ -59,6 +59,19 @@ namespace MyRegiserAppWithCRUD.Controllers
             item.Password = model.Password;
             db.SaveChanges();
             return View();
+        }
+
+        public JsonResult CheckUSernameAvailability(string userdata)
+        {
+            var searchData = db.LoginPanels.Where(x => x.Username== userdata).SingleOrDefault();
+            if (searchData != null)
+            {
+                return Json(1);
+            }
+            else
+            {
+                return Json(0);
+            }
         }
     }
 }

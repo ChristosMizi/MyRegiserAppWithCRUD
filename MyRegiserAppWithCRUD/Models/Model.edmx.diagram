@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="c41e0204696c4f598812872ed59bbfac" Name="Diagram1">
+      <Diagram DiagramId="cef331c6fbb8432980bf8b28ab80d788" Name="Diagram1">
         <EntityTypeShape EntityType="MyRegisterAppWithCRUDModel.LoginPanel" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>

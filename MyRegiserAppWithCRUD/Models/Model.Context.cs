@@ -13,10 +13,10 @@ namespace MyRegiserAppWithCRUD.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class MyRegisterAppWithCRUDEntitiesConn : DbContext
+    public partial class MyRegisterAppWithCRUDEntities1 : DbContext
     {
-        public MyRegisterAppWithCRUDEntitiesConn()
-            : base("name=MyRegisterAppWithCRUDEntitiesConn")
+        public MyRegisterAppWithCRUDEntities1()
+            : base("name=MyRegisterAppWithCRUDEntities1")
         {
         }
     
